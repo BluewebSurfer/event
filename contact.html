@@ -8,7 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>settle</title>
+      <title>bhai bhai caterers</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -19,7 +19,7 @@
       <!-- Responsive-->
       <link rel="stylesheet" href="css/responsive.css">
       <!-- fevicon -->
-      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <link rel="icon" href="images/fds2.png" type="image/gif" />
       <!-- Scrollbar Custom CSS -->
       <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
       <!-- Tweaks for older IEs-->
@@ -47,7 +47,7 @@
                      <div class="full">
                         <div class="center-desk">
                            <div class="logo">
-                              <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+                              <a href="index.html"><img src="images/fds2.png" alt="#" style="height: 155px;"/></a>
                            </div>
                         </div>
                      </div>
@@ -80,10 +80,10 @@
                            <li class="nav-item">
                               <a class="nav-link" href="gallery.html">Gallery</a>
                            </li>
-                           <!-- <li class="nav-item">
-                              <a class="nav-link" href="Javascript:void(0)">RSVP</a>
-                           </li>
                            <li class="nav-item">
+                              <a class="nav-link" href="client.html">Our Clients</a>
+                           </li>
+                           <!-- <li class="nav-item">
                               <a class="nav-link" href="Javascript:void(0)">Best People</a>
                            </li>
                            <li class="nav-item">
@@ -118,30 +118,58 @@
                </div>
                <div class="col-md-6">
                   <div class="mapimg">
-                     <figure><img src="images/map.png" alt="#"/></figure>
+                     <!-- <figure><img src="images/map.png" alt="#"/></figure> -->
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3564.0181677897194!2d88.36625911491168!3d26.711866575138306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e447446ca3cc87%3A0xe78f7395c1fcc50c!2sBlueWeb%20Surfer!5e0!3m2!1sen!2sin!4v1627715331630!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                   </div>
                </div>
                <div class="col-md-6">
-                  <form id="request" class="main_form">
+                  <form id="request" class="main_form" action="javascript:sendmail()" method="post">
                      <div class="row">
                         <div class="col-md-6 ">
                            <label>Name</label>
-                           <input class="contactus" placeholder="" type="type" name=" Name"> 
+                           <input
+                              type="text"
+                              class="form-control"
+                              name="Name"
+                              id="Name"
+                              placeholder="Name"
+                              required=""
+                           /> 
                         </div>
                         <div class="col-md-6">
                            <label>Phone Number</label>
-                           <input class="contactus" placeholder="" type="type" name="Phone Number">                          
+                           <input
+                              type="number"
+                              class="form-control"
+                              name="Subject"
+                              id="Subject"
+                              placeholder="Phone Number"
+                              required=""
+                           />                          
                         </div>
                         <div class="col-md-12">
                            <label>Email</label>
-                           <input class="contactus" placeholder="" type="type" name="Email"> 
+                        <input
+                           type="email"
+                           class="form-control"
+                           name="Sender"
+                           id="Sender"
+                           placeholder="Email"
+                           required=""
+                        /> 
                         </div>
                         <div class="col-md-12">
                            <label>Message</label>
-                           <textarea class="textarea" placeholder="" type="type" Message="Name"></textarea>
+                           <textarea
+                              name="Message"
+                              class="form-control"
+                              id="Message"
+                              placeholder="Message"
+                              required=""
+                           ></textarea>
                         </div>
                         <div class="col-md-12">
-                           <button class="send_btn">Send</button>
+                           <button class="send_btn" type="submit">Send</button>
                         </div>
                      </div>
                   </form>
@@ -156,7 +184,7 @@
             <div class="container">
                <div class="row border_bo1 ">
                   <div class="col-md-4">
-                     <a class="logof" href="index.html"><img src="images/logo.png" alt="#"/></a> 
+                     <a class="logof" href="index.html"><img src="images/fds2.png" alt="#"/></a> 
                      <form class="form_subscri">
                         <div class="row">
                            <!-- <div class="col-md-12">
@@ -218,10 +246,11 @@
                            <li> <i class="fa fa-envelope" aria-hidden="true"></i><a href="Javascript:void(0)"> demo@gmail.com</a></li>
                         </ul>
                         <ul class="social_icon">
-                           <li><a href="Javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                           <li><a href="https://www.facebook.com/151301215712218/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                           <li><a href="https://www.instagram.com/ankurdasbbd/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                            <li><a href="Javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                           <li><a href="Javascript:void(0)"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-                           <li><a href="Javascript:void(0)"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                           <li><a href="https://bit.ly/mychannel321"><i class="fa fa-youtube-square" aria-hidden="true"></i></a></li>
+                           
                         </ul>
                      </div>
                   </div>
@@ -264,5 +293,56 @@
           }
          }
       </script>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"
+></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+<script>
+  function sendmail() {
+    var name = $("#Name").val();
+    var email = $("#Sender").val();
+    var subject = $("#Subject").val();
+    var message = $("#Message").val();
+
+    // var body = $('#body').val();
+
+    var Body =
+      "Name: " +
+      name +
+      "<br>Email: " +
+      email +
+      "<br>Subject: " +
+      subject +
+      "<br>Message: " +
+      message;
+    // console.log(name, phone, email, message);
+
+    Email.send({
+      SecureToken: "2013592c-d584-464e-837c-01847b1bf79f",
+      To: "02koustavdassharma@gmail.com",
+      From: "samaptirouth180@gmail.com",
+      Subject: "New message on contact from " + name,
+      Body: Body,
+    }).then((message) => {
+      //console.log (message);
+      if (message == "OK") {
+        alert("Your mail has been send. Thank you for connecting.");
+      } else {
+        console.error(message);
+        alert("There is error at sending message. ");
+      }
+    });
+  }
+</script>
+
+
+
+
    </body>
 </html>
